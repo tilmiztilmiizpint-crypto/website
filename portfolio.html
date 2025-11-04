@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div class="portfolio-header">
+        <p>Mau lihat portofolio saya</p>
+    </div>
+
+    <div class="card-container">
+        
+        <div class="card">
+            <img src="20251026_211521.jpg" alt="Proyek 1" width="320" height="180">
+            
+            <div class="card-body">
+                <h3>Calcify</h3>
+                
+                <p>Fast and efficient solutions for all your number needs!</p>
+                
+                <a href="calcify.html" class="click-here">lihat saya</a>
+            </div>
+        </div>
+
+        </div>
+
+</body>
+</html>
+    <style>
+        /* Gaya Dasar Body & Kontainer */
+body {
+    /* Menggunakan font yang bersih, ganti dengan font favorit Anda (misal: 'Poppins', sans-serif) */
+    font-family: Arial, sans-serif; 
+    background-color: #1e1e1e; /* Latar belakang gelap yang lembut */
+    color: #f1f1f1; /* Teks berwarna putih terang */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    display: flex; /* Untuk menempatkan konten di tengah */
+    justify-content: center;
+    align-items: flex-start; /* Konten dimulai dari atas */
+    min-height: 100vh;
+}
+
+/* Bagian Header/Judul */
+.portfolio-header {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.portfolio-header p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffcc00; /* Warna aksen kuning/emas */
+}
+
+/* Kontainer Utama Card */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Memungkinkan card untuk turun baris di layar kecil */
+    gap: 30px; /* Jarak antara card */
+    max-width: 1000px;
+    justify-content: center;
+}
+
+/* Gaya Card */
+.card {
+    background-color: #2a2a2a; /* Warna card yang sedikit lebih terang dari body */
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Bayangan yang dalam dan lembut */
+    overflow: hidden; /* Memastikan gambar tidak keluar dari batas card */
+    width: 320px; /* Lebar tetap untuk tampilan konsisten */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek Hover untuk Card */
+.card:hover {
+    transform: translateY(-5px); /* Sedikit terangkat */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Gaya Gambar Proyek */
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Memastikan gambar mengisi area tanpa terdistorsi */
+}
+
+/* Konten di dalam Card */
+.card-body {
+    padding: 20px;
+}
+
+.card-body h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Judul Card menggunakan warna aksen */
+    font-size: 1.8em;
+    border-bottom: 2px solid #3c3c3c; /* Garis pemisah di bawah judul */
+    padding-bottom: 5px;
+}
+
+.card-body p {
+    font-size: 0.95em;
+    color: #b0b0b0; /* Warna teks deskripsi yang sedikit redup */
+    margin-bottom: 20px;
+}
+
+/* Gaya Tautan/Tombol */
+.card-body a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00; /* Tombol/link menggunakan warna aksen */
+    color: #1e1e1e; /* Teks tombol berwarna gelap */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.card-body a:hover {
+    background-color: #ffdd44; /* Warna yang lebih cerah saat di-hover */
+}
+
+/* Responsif sederhana untuk layar yang sangat kecil */
+@media (max-width: 400px) {
+    .card {
+        width: 100%; /* Card mengisi penuh lebar layar kecil */
+    }
+}
+    </style>
+
+
+    

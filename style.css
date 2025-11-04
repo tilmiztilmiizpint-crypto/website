@@ -1,0 +1,294 @@
+:root {
+
+   
+
+    --primary-color: #0056b3;
+
+    --secondary-color: #f4f4f9;
+
+    --accent-color: #ff6b6b;
+
+    --text-dark: #333;
+
+    --text-light: #fff;
+
+    --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+
+
+
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+body {
+
+    font-family: var(--font-family);
+
+    line-height: 1.6;
+
+    color: var(--text-dark);
+
+    background-color: var(--secondary-color); /* Latar belakang abu-abu muda */
+
+    padding-top: 20px; /* Padding di atas untuk kesan bersih */
+
+    padding-bottom: 50px;
+
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4); /* lebih lembut */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 60px;
+  z-index: 1000;
+  backdrop-filter: blur(8px); /* efek kaca modern */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* biar rapi */
+}
+
+nav .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+nav .logo span {
+  color: #3499be;
+}
+
+/* Container untuk menengahkan dan membatasi lebar konten */
+
+.container {
+
+    width: 90%;
+
+    max-width: 900px; /* Lebar maksimum yang nyaman dibaca */
+
+    margin: 0 auto;
+
+    background-color: var(--text-light); /* Konten utama berwarna putih */
+
+    padding: 40px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Efek bayangan halus */
+
+    border-radius: 8px; /* Sudut membulat */
+
+}
+
+
+
+ul li a {
+
+      text-decoration: none;
+
+      color: #333;
+
+      padding: 5px 20px;
+
+      border: 1px solid transparent;
+
+      transition: 0,5 ease;
+
+    }
+
+h1, h2, h3 {
+
+    color: var(--primary-color);
+
+    line-height: 1.2;
+
+}
+
+
+
+h2 {
+
+    font-size: 1.8em;
+
+    border-bottom: 3px solid var(--primary-color);
+
+    padding-bottom: 8px;
+
+    margin: 30px 0 25px 0;
+
+    text-transform: uppercase;
+
+}
+
+
+
+/* Style untuk "Hello!" di awal */
+
+.greeting {
+
+    font-size: 2.5em;
+
+    font-weight: bold;
+
+    color: var(--accent-color);
+
+    margin-bottom: 10px;
+
+}
+
+
+
+/* ====================================
+
+   3. ABOUT ME & CONTACT INFO
+
+   ==================================== */
+
+.about-section p {
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.contact-info strong {
+
+    font-weight: bold;
+
+    color: var(--primary-color);
+
+    display: inline-block;
+
+    width: 80px; /* Untuk penataan yang rapi */
+
+}
+
+
+
+a {
+
+    color: var(--primary-color);
+
+    text-decoration: none;
+
+    transition: color 0.3s;
+
+}
+
+
+
+a:hover {
+
+    color: var(--accent-color);
+
+}
+
+
+
+.download-cv-btn {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 10px 20px;
+
+    background-color: var(--primary-color);
+
+    color: var(--text-light);
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    transition: background-color 0.3s;
+
+}
+
+
+
+.download-cv-btn:hover {
+
+    background-color: #003f80;
+
+}
+
+
+
+/* ====================================
+
+   4. SKILLS SECTION (Tampilan Progres)
+
+   ==================================== */
+
+.skills-list {
+
+    margin-top: 15px;
+
+}
+
+
+
+/* Menata setiap baris skill */
+
+.skill-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 10px 0;
+
+    border-bottom: 1px dashed #eee;
+
+}
+
+
+
+.skill-name {
+
+    flex-basis: 70%; /* Memberi ruang yang cukup untuk nama skill */
+
+    font-weight: 500;
+
+}
+
+
+
+.skill-rating {
+
+    flex-basis: 30%;
+
+    text-align: right;
+
+    font-weight: bold;
+
+    color: var(--primary-color);
+
+}
+
+
+
+/* Highlight untuk Rebounding (Area Peningkatan Utama) */
+
+.skill-item:nth-child(2) .skill-rating {
+
+    color: var(--accent-color); /* Menonjolkan rating yang lebih rendah */
+
+}
